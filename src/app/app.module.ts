@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -13,13 +14,15 @@ import { SharedModule } from './shared/shared.module';
     AppComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    CoreModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     LoginModule,
     SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
