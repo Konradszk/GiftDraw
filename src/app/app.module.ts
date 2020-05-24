@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     LoginModule,
+    HttpClientModule,
     SharedModule
   ],
   providers: [],

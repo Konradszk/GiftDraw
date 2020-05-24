@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginContainer } from './login/components/login-container';
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'draw', pathMatch: 'full' },
+  { path: 'draw', loadChildren: () => import('./draw/draw.module').then(m => m.DrawModule) }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
