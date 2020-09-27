@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { LoginPresenter } from './login.presenter';
 import { FormGroup } from '@angular/forms';
-import { LoginDTO } from '../../dto/loginDTO';
+import { LoginDTO } from '../../../dto/loginDTO';
 
 @Component({
   selector: 'gd-login-ui',

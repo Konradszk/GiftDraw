@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { LoginService } from '../services/login.service';
-import { LoginDTO } from '../dto/loginDTO';
+import { AuthService } from '../../services/auth.service';
+import { LoginDTO } from '../../dto/loginDTO';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class LoginContainer {
 
   public constructor(
-    private readonly loginService: LoginService,
+    private readonly loginService: AuthService,
     private readonly router: Router) {
   }
 
