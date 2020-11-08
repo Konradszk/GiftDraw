@@ -1,6 +1,6 @@
 <div class="container">
   <section class="section-container" fxLayout="column" fxLayoutAlign="center center">
-    <h1>{{'login.signIn' | translate}}</h1>
+    <h1>{{'login.signUp' | translate}}</h1>
 
     <div fxLayout="column" fxLayoutAlign="center center">
       <gd-input [control]="form.controls.login"
@@ -17,7 +17,7 @@
               color="accent"
               [disabled]="form.invalid"
               (click)="submitData()">
-        {{'login.signUp' | translate}}
+        {{'login.submit' | translate}}
       </button>
     </div>
   </section>
