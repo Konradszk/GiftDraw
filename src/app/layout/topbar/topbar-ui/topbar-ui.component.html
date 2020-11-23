@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" role="toolbar">
+  <button mat-icon-button
+          class="example-icon"
+          aria-label="icon-button with menu icon"
+          (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1 class="logo"
+      [routerLink]="'/'">
+    {{'siteName' | translate}}
+  </h1>
+
+  <span class="spacer"></span>
+
+  <button mat-button
+          class="mr-3"
+          [routerLink]="'/login'">
+    <a>{{'login.signInSection' | translate}}</a>
+  </button>
+  <button mat-button
+          class="mr-3"
+          [routerLink]="'/register'">
+    <a>{{'login.signUpSection' | translate}}</a>
+  </button>
+  <button mat-icon-button class="favorite-icon" aria-label="icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>

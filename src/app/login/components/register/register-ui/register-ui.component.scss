@@ -1,0 +1,15 @@
+@import '../../../../../styles/color';
+@import '../../../../../styles/spacing';
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  border: 0.5rem solid $primary;
+  padding: $md-padding;
+  border-radius: 1rem;
+}

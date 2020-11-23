@@ -1,4 +1,6 @@
+import { loginTranslations } from './login';
+
 export const plTranslations = {
-  login: 'login',
-  password: 'hasło'
+  login: loginTranslations,
+  siteName: 'Gift Draw'
 };

@@ -1,0 +1,24 @@
+<div class="container">
+  <section class="section-container" fxLayout="column" fxLayoutAlign="center center">
+    <h1>{{'login.signUp' | translate}}</h1>
+
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <gd-input [control]="form.controls.login"
+                [placeholder]="'login.login' | translate"></gd-input>
+      <gd-input [control]="form.controls.name"
+                [placeholder]="'login.name' | translate"></gd-input>
+      <gd-input [control]="form.controls.password"
+                [placeholder]="'login.password' | translate"></gd-input>
+      <gd-input [control]="form.controls.confirmedPassword"
+                [placeholder]="'login.confirmedPassword' | translate"></gd-input>
+
+      <button mat-raised-button
+              type="submit"
+              color="accent"
+              [disabled]="form.invalid"
+              (click)="submitData()">
+        {{'login.submit' | translate}}
+      </button>
+    </div>
+  </section>
+</div>

@@ -3,19 +3,24 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
+import { InputComponent } from './components/input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [InputComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MaterialModule,
     FlexLayoutModule,
-    TranslateModule
+    TranslateModule,
+    InputComponent,
+    ReactiveFormsModule,
   ]
 })
 export class SharedModule {

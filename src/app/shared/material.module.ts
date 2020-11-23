@@ -3,15 +3,26 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 const materialModules = [
   MatButtonModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatRippleModule,
+  MatSidenavModule,
+  MatListModule
 ];
 
 @NgModule({
   declarations: [],
+  providers: [],
   imports: [
     ...materialModules,
     CommonModule
@@ -20,4 +31,5 @@ const materialModules = [
     ...materialModules
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+}
