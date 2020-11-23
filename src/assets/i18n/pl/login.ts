@@ -4,8 +4,10 @@ export const loginTranslations = {
   name: 'imię',
   password: 'Hasło',
   signUp: 'Zarejestruj się',
+  signUpSection: 'Zarejestacja',
   signUpSubmit: 'Utwórz konto',
   signIn: 'Logowanie',
+  signInSection: 'Logowanie',
   signInSubmit: 'Zaloguj się',
   submit: 'Zatwierdź',
 };

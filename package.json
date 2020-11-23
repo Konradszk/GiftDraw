@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start-dev": "ng serve --proxy-config proxy/proxy.local.config.json",
+    "start-azure": "ng serve --proxy-config proxy/proxy.azure.config.json",
+    "build": "ng build --prod=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
