@@ -2,7 +2,7 @@
   <section class="section-container" fxLayout="column" fxLayoutAlign="center center">
     <h1>{{'login.signUp' | translate}}</h1>
 
-    <div fxLayout="column" fxLayoutAlign="center center">
+    <div>
       <gd-input [control]="form.controls.login"
                 [placeholder]="'login.login' | translate"></gd-input>
       <gd-input [control]="form.controls.name"
@@ -13,6 +13,7 @@
                 [placeholder]="'login.confirmedPassword' | translate"></gd-input>
 
       <button mat-raised-button
+              class="ml-auto d-block"
               type="submit"
               color="accent"
               [disabled]="form.invalid"

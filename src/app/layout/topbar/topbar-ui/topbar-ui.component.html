@@ -12,12 +12,14 @@
 
   <span class="spacer"></span>
 
-  <button mat-button
-          class="mr-3"
+  <button *ngIf="!(isMobile$ | async)"
+          mat-button
+          class=" mr-3"
           [routerLink]="'/login'">
     <a>{{'login.signInSection' | translate}}</a>
   </button>
-  <button mat-button
+  <button *ngIf="!(isMobile$ | async)"
+          mat-button
           class="mr-3"
           [routerLink]="'/register'">
     <a>{{'login.signUpSection' | translate}}</a>

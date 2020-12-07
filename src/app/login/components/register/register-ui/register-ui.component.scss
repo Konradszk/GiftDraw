@@ -1,15 +1,25 @@
 @import '../../../../../styles/color';
 @import '../../../../../styles/spacing';
+@import '../../../../../styles/typography';
+
+$container-width: 50rem;
 
 .container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .section-container {
   border: 0.5rem solid $primary;
   padding: $md-padding;
   border-radius: 1rem;
+  margin: $md-padding;
+
+  @media (min-width: $breakpoints-tablet) {
+    max-width: $container-width;
+
+  }
 }

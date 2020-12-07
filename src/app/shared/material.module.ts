@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 const materialModules = [
   MatButtonModule,
@@ -17,7 +19,8 @@ const materialModules = [
   MatIconModule,
   MatRippleModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  LayoutModule
 ];
 
 @NgModule({
