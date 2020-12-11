@@ -6,7 +6,12 @@
       <gd-input [control]="form.controls.login"
                 [placeholder]="'login.login' | translate"></gd-input>
       <gd-input [control]="form.controls.password"
-                [placeholder]="'login.password' | translate"></gd-input>
+                [placeholder]="'login.password' | translate"
+                (keydown.enter)="submitData()"></gd-input>
+      <mat-checkbox [formControl]="form.controls.autoLogIn"
+                    [color]="'primary'">
+        {{'login.autoLogIn' | translate}}
+      </mat-checkbox>
 
       <button mat-raised-button
               class="ml-auto d-block"

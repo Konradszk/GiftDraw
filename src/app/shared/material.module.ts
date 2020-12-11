@@ -9,6 +9,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 const materialModules = [
@@ -20,6 +21,7 @@ const materialModules = [
   MatRippleModule,
   MatSidenavModule,
   MatListModule,
+  MatCheckboxModule,
   LayoutModule
 ];
 

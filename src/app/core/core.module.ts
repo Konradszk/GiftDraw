@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { InternationalizationModule } from './internationalization/internationalization.module';
 import { errorIfModuleAlreadyLoaded } from './error-if-module-already-loaded';
 import { ToastrModule } from 'ngx-toastr';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { ToastrModule } from 'ngx-toastr';
   imports: [
     CommonModule,
     ToastrModule.forRoot(),
+    AuthModule,
     InternationalizationModule
   ]
 })

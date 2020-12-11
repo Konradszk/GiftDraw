@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
-import { LoginDTO } from '../../dto/loginDTO';
-import { Router } from '@angular/router';
+import { LoginData } from '../../dto/loginDTO';
+import { Store } from '@ngrx/store';
+import * as fromAuth from '../../store';
 
 @Component({
   selector: 'gd-login-container',
@@ -12,19 +12,13 @@ import { Router } from '@angular/router';
 export class LoginContainer {
 
   public constructor(
-    private readonly loginService: AuthService,
-    private readonly router: Router) {
+    private readonly store: Store<fromAuth.State>) {
   }
 
-  public signUpUser($event: LoginDTO): void {
-    this.loginService.login({ ...$event }).subscribe(
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      },
-      error => {
-        console.error(error);
-      }
-    );
+  public signUpUser(data: LoginData): void {
+    this.store.dispatch(fromAuth.actions.trySignIn({
+      credentials: { login: data.login, password: data.password },
+      autoLogIn: data.autoLogIn
+    }));
   }
 }

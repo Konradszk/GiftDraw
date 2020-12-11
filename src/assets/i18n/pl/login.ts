@@ -1,4 +1,5 @@
 export const loginTranslations = {
+  autoLogIn: 'automatyczne logowanie',
   confirmedPassword: 'Powtórz hasło',
   login: 'Nazwa użytkownika',
   name: 'imię',
@@ -9,5 +10,8 @@ export const loginTranslations = {
   signIn: 'Logowanie',
   signInSection: 'Logowanie',
   signInSubmit: 'Zaloguj się',
+  signOutSubmit: 'Wyloguj się',
+  logoutSuccess: 'Wylogowano pomyślnie',
+  redirectLogout: 'Przekierowanie nastąpi za X sekund',
   submit: 'Zatwierdź',
 };
