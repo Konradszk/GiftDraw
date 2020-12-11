@@ -5,10 +5,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
 import { InputComponent } from './components/input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PasswordComponent } from './components/password/password.component';
 
 
 @NgModule({
-  declarations: [InputComponent],
+  declarations: [InputComponent, PasswordComponent],
   imports: [
     CommonModule,
     MaterialModule,
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FlexLayoutModule,
     TranslateModule,
     InputComponent,
+    PasswordComponent,
     ReactiveFormsModule,
   ]
 })

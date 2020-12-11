@@ -11,6 +11,7 @@ export class RegisterPresenter {
     login: new FormControl(undefined, [Validators.required, Validators.minLength(5)]),
     password: new FormControl(undefined, [Validators.required, Validators.minLength(4)]),
     confirmedPassword: new FormControl(undefined, Validators.required),
-    name: new FormControl(undefined, [Validators.required, Validators.minLength(3)])
+    name: new FormControl(undefined, [Validators.required, Validators.minLength(3)]),
+    registerSecret: new FormControl(undefined, [Validators.required, Validators.minLength(4)])
   }, {validator: PasswordValidation.MatchPassword});
 }

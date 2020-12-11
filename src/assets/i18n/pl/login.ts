@@ -11,7 +11,9 @@ export const loginTranslations = {
   signInSection: 'Logowanie',
   signInSubmit: 'Zaloguj się',
   signOutSubmit: 'Wyloguj się',
+  getRegisterSecret: 'Spytaj twórce aplikacji',
   logoutSuccess: 'Wylogowano pomyślnie',
   redirectLogout: 'Przekierowanie nastąpi za X sekund',
+  registerSecret: 'Kod rejestracji',
   submit: 'Zatwierdź',
 };
