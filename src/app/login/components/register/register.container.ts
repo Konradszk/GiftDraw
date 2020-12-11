@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RegisterDTO } from '../../dto/register-dto';
-import { AuthService } from '../../services/auth.service';
-import { Router } from '@angular/router';
-import { HttpErrorResponse } from '@angular/common/http';
+import { Store } from '@ngrx/store';
+
+import * as fromAuth from '../../store';
 
 @Component({
   selector: 'gd-register-container',
@@ -13,18 +13,10 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class RegisterContainer {
 
-  constructor(private readonly authService: AuthService,
-              private readonly router: Router) {
+  constructor(private readonly store: Store<fromAuth.State>) {
   }
 
   public signIn(dto: RegisterDTO) {
-    this.authService.register(dto).subscribe(
-      () => {
-        this.router.navigate(['/']);
-      },
-      (error: HttpErrorResponse) => {
-        console.error(error);
-      }
-    );
+    this.store.dispatch(fromAuth.actions.trySignUp({ credentials: dto }));
   }
 }

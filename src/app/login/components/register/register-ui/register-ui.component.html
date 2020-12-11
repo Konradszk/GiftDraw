@@ -2,17 +2,24 @@
   <section class="section-container" fxLayout="column" fxLayoutAlign="center center">
     <h1>{{'login.signUp' | translate}}</h1>
 
-    <div fxLayout="column" fxLayoutAlign="center center">
+    <div>
       <gd-input [control]="form.controls.login"
                 [placeholder]="'login.login' | translate"></gd-input>
       <gd-input [control]="form.controls.name"
                 [placeholder]="'login.name' | translate"></gd-input>
-      <gd-input [control]="form.controls.password"
-                [placeholder]="'login.password' | translate"></gd-input>
-      <gd-input [control]="form.controls.confirmedPassword"
-                [placeholder]="'login.confirmedPassword' | translate"></gd-input>
+      <gd-password [control]="form.controls.password"
+                   [placeholder]="'login.password' | translate"></gd-password>
+      <gd-password [control]="form.controls.confirmedPassword"
+                   [placeholder]="'login.confirmedPassword' | translate"></gd-password>
+
+      <gd-password [control]="form.controls.registerSecret"
+                   [placeholder]="'login.registerSecret' | translate"
+                   [hint]="'login.getRegisterSecret' | translate">
+      </gd-password>
+
 
       <button mat-raised-button
+              class="ml-auto d-block"
               type="submit"
               color="accent"
               [disabled]="form.invalid"

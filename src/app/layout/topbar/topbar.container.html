@@ -1,3 +1,5 @@
 <gd-topbar-ui
-  [toggleMenuEmitter]="toggleMenu">
+  [toggleMenuEmitter]="toggleMenu"
+  [isLogged]="isLogged$ | async"
+  [isMobile]="isMobile$ | async">
 </gd-topbar-ui>

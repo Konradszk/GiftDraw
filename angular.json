@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "GiftDraw"
+  "defaultProject": "GiftDraw",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

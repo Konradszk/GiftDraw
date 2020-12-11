@@ -1,3 +1,8 @@
 .h100 {
   height: calc(100% - 7rem);
 }
+
+.active-link {
+  opacity: 50%;
+  background: lightgray;
+}

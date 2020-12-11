@@ -7,8 +7,15 @@ import { Component, EventEmitter, Input } from '@angular/core';
 })
 export class TopbarUIComponent {
 
+
   @Input()
   public toggleMenuEmitter: EventEmitter<void>;
+
+  @Input()
+  public isLogged: boolean = false;
+
+  @Input()
+  public isMobile: boolean = false;
 
   public toggleMenu(): void {
     this.toggleMenuEmitter.emit();

@@ -8,6 +8,7 @@ export class LoginPresenter {
 
   public form: FormGroup = this.formBuilder.group({
     login: new FormControl(undefined, Validators.required),
-    password: new FormControl(undefined, Validators.required)
+    password: new FormControl(undefined, Validators.required),
+    autoLogIn: new FormControl()
   });
 }
