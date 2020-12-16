@@ -1,0 +1,6 @@
+@import 'variables/color';
+
+@include mat-core();
+
+@include angular-material-theme($app-theme);
+
