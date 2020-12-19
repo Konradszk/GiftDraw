@@ -1,6 +1,11 @@
-@import 'variables/typography';
-@import 'spacing';
-@import 'theme';
+@import './variables/typography.scss';
+@import './spacing.scss';
+@import './theme.scss';
+
+
+:root {
+  font-size: $font-size-root !important;
+}
 
 html, body {
   height: 100%;
@@ -9,4 +14,10 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: $font-size-primary !important;
 }
+
+h1, h2, h3, h4 {
+  font-weight: 400 !important;
+}
+
