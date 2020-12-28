@@ -10,6 +10,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 const materialModules = [
@@ -22,7 +24,9 @@ const materialModules = [
   MatSidenavModule,
   MatListModule,
   MatCheckboxModule,
-  LayoutModule
+  LayoutModule,
+  MatDividerModule,
+  MatTooltipModule
 ];
 
 @NgModule({
