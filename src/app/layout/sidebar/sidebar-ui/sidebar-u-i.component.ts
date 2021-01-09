@@ -13,6 +13,9 @@ export class SidebarUIComponent implements OnChanges, OnDestroy {
   @Input()
   public toggleMenu: EventEmitter<void>;
 
+  @Input()
+  public isLogged: boolean = false;
+
   @ViewChild('snav')
   public nav: MatSidenav;
 
@@ -29,5 +32,9 @@ export class SidebarUIComponent implements OnChanges, OnDestroy {
   public ngOnDestroy(): void {
     this.ngDestroy.next();
     this.ngDestroy.complete();
+  }
+
+  public close(): void {
+    this.nav.close();
   }
 }

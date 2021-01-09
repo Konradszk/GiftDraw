@@ -1,8 +1,3 @@
-$xs-padding: 0.5rem;
-$sd-padding: 1rem;
-$md-padding: 2rem;
-$md-padding: 4rem;
-
 .w-100 {
   width: 100%;
 }
@@ -12,7 +7,7 @@ $md-padding: 4rem;
 }
 
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 .m-0 {

@@ -1,7 +1,7 @@
 import { createAction, props } from '@ngrx/store';
-import { LoginDTO } from '../dto/loginDTO';
+import { LoginDTO } from '../../../login/dto/loginDTO';
 import { HttpErrorResponse } from '@angular/common/http';
-import { RegisterDTO } from '../dto/register-dto';
+import { RegisterDTO } from '../../../login/dto/register-dto';
 
 export const trySignIn = createAction('[Auth/API] Try sign in by xhr', props<{ credentials: LoginDTO, autoLogIn: boolean }>());
 export const trySignInSuccess = createAction('[Auth/API] Try sign in, succeeded', props<{ token: string, autoLogIn: boolean }>());

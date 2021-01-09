@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////
+//// Typography settings
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Font size set on root element (<html>).
+// ---
+// It's not the font size actually used by any element on the page. It's
+// only referenced when setting actual font sizes with rem units.
+// ---
+// It's value 62.5% is equal to 10px, as all major browsers have default
+// font size equal to 16px.
+// ---
+// It's value 62.5% is equal to 10px, as all major browsers have default
+// font size equal to 16px.
+// 10px value used to ease calculations when using rem units (1rem = 10px,
+// so 23px = 2.3rem and not obscure 1.4375rem).
+// ---
+// % units used instead of pixels to take into account the user preferences -
+// - if the user increases the font size in browser settings, it should also
+// be taken into account and increased on our site.
+
+$font-size-root-px-unitless: 10; // 10px
+$font-size-root: $font-size-root-px-unitless / 16 * 100%;
+
+// Primary font size set for the page for page (on <body> element)
+$font-size-primary-rem-unitless: 1.4;
+$font-size-primary: $font-size-primary-rem-unitless * 1rem;
+
+$breakpoints-phone: 640px;
+$breakpoints-tablet: 768px;
+$breakpoints-desktop: 1024px;

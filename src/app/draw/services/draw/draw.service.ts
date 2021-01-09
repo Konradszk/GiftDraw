@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 
 @Injectable({
@@ -17,5 +17,9 @@ export class DrawService {
 
   public getTestText(): Observable<string> {
     return this.http.get(`${this.url}/test`, { responseType: 'text' });
+  }
+
+  public getMyGiftDraws(): Observable<any> {
+    return of();
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginData } from '../../dto/loginDTO';
 import { Store } from '@ngrx/store';
-import * as fromAuth from '../../store';
+import * as fromAuth from '../../../core/auth/store';
 
 @Component({
   selector: 'gd-login-container',

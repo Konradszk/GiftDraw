@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as fromAuth from '../../store';
+import * as fromAuth from '../../../core/auth/store';
 import { Observable } from 'rxjs';
 import { delay } from 'rxjs/operators';
 

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="add-draw-container">
+    <mat-divider class="w-100"></mat-divider>
+    <button mat-icon-button
+            routerLink="../create"
+            color="accent"
+            aria-label="icon-button with plus icon"
+            [matTooltip]="'draw.addDrawTooltip' | translate"
+            [matTooltipPosition]="'below'">
+      <mat-icon class="plus-icon">add_circle</mat-icon>
+    </button>
+
+  </div>
+  <div class="user-draw-container">
+    <h2>{{'draw.yourDraws' | translate}}:</h2>
+    <div class="draw-elements">
+      <div class="box-1"></div>
+      <div class="box-1"></div>
+      <div class="box-1"></div>
+      <div class="box-1"></div>
+    </div>
+  </div>
+</div>
