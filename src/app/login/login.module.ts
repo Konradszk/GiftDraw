@@ -6,10 +6,6 @@ import { LoginRoutingModule } from './login-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RegisterUiComponent } from './components/register/register-ui/register-ui.component';
 import { RegisterContainer } from './components/register/register.container';
-import { StoreModule } from '@ngrx/store';
-import * as fromAuth from './store';
-import { EffectsModule } from '@ngrx/effects';
-import { AuthEffects } from './store/auth.effects';
 import { LogoutUiComponent } from './components/logout/logout-ui/logout-ui.component';
 import { LogoutContainer } from './components/logout/logout.container';
 
@@ -19,8 +15,6 @@ import { LogoutContainer } from './components/logout/logout.container';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    StoreModule.forFeature(fromAuth.authFeatureKey, fromAuth.reducers),
-    EffectsModule.forFeature([AuthEffects]),
     SharedModule
   ],
 })

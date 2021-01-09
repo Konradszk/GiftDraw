@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../../environments/environment';
-import { LoginDTO } from '../dto/loginDTO';
-import { RegisterDTO } from '../dto/register-dto';
+import { environment } from '../../../../environments/environment';
+import { LoginDTO } from '../../../login/dto/loginDTO';
+import { RegisterDTO } from '../../../login/dto/register-dto';
 import { map } from 'rxjs/operators';
 
 const AUTH_HEADER = 'Authorization';
@@ -11,6 +11,7 @@ const AUTH_HEADER = 'Authorization';
 @Injectable({
   providedIn: 'root'
 })
+// todo change to interface and Inject Token or forRoot
 export class AuthService {
   private url: string = `${environment.apiUrl}/auth`;
 

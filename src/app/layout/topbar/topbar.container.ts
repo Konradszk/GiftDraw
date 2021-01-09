@@ -1,7 +1,7 @@
 import { Component, EventEmitter } from '@angular/core';
 import { Store } from '@ngrx/store';
 
-import * as fromAuth from '../../login/store';
+import * as fromAuth from '../../core/auth/store';
 import { Observable } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';

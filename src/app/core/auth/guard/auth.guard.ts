@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
-import * as fromAuth from '../../../login/store';
+import * as fromAuth from '../store';
 import { first, map } from 'rxjs/operators';
 import { GUARD_MODE } from '../index';
 
